@@ -1,0 +1,150 @@
+.weltreligionen-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.weltreligionen-bild {
+    height: 15rem;
+    object-fit: contain;
+}
+
+.weltreligionen-text {
+    margin-left: 1rem;
+    max-width: 600px;
+}
+
+@media (max-width: 800px) {
+    .weltreligionen-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .weltreligionen-bild {
+        max-width: 110%;
+    }
+
+    .weltreligionen-text {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+.buddha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    gap: 1rem;
+}
+
+.buddha-bild {
+    height: 3rem;
+}
+
+.buddha-text {
+    text-align: center;
+    max-width: 75%;
+}
+
+.wahrheiten-container {
+    margin-top: 3rem;
+}
+
+.wahrheiten-titel {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wahrheiten-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wahrheiten-wahrheit {
+    text-align: center;
+    color: coral;
+    margin-top: 1rem;
+}
+
+.pfad-container {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+
+.pfad-titel,
+.pfad-text {
+    text-align: center;
+}
+
+.pfad-grid {
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.pfad-grid > div {
+    border: 2px solid var(--pfad-border, rgb(175, 175, 175));
+    border-radius: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    background-image: linear-gradient(var(--pfad-bg-gradient, transparent, lightblue));
+    transition: transform 0.2s ease;
+}
+
+.pfad-grid > div:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+@media (max-width: 800px) {
+    .pfad-grid {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+.kloster-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.kloster-untercontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.kloster-bild {
+    height: 10rem;
+}
+
+.kloster-text {
+    max-width: 50rem;
+    text-align: left;
+}

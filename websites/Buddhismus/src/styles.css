@@ -1,0 +1,113 @@
+@import url(/src/styles/startseite.css);
+@import url(/src/styles/quellen.css);
+@import url(/src/styles/darkmode.css);
+
+html {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.nav-titel {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-icon {
+    height: 2.7rem;
+    width: 2.7rem;
+}
+
+@media (max-width: 800px) {
+    .nav-container {
+        padding-left: 2rem;
+    }
+}
+
+.linie-horizontal {
+    border: none;
+    border-top: 1px solid rgb(175, 175, 175);
+    height: 1px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.quellen-link {
+    text-align: center;
+    font-size: small;
+    color: dodgerblue;
+}
+
+.quellen-link:hover {
+    text-decoration: underline;
+}
+
+.autoren {
+    font-size: small;
+}
+
+.theme-toggle-wrapper {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.theme-toggle {
+    background-color: var(--toggle-bg);
+    border-radius: 20px;
+    padding: 3px;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.toggle-circle {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+    transform: translateX(0);
+    position: absolute;
+    left: 3px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), 0 3px 8px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .toggle-circle {
+    transform: translateX(22px);
+    background-color: #333333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}

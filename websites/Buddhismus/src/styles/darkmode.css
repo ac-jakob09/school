@@ -1,0 +1,53 @@
+:root {
+    --background: white;
+    --text: black;
+    --secondary-text: #555;
+    --border: #ddd;
+    --toggle-bg: #e9e9e9;
+    --toggle-circle: white;
+    --line-color: rgb(175, 175, 175);
+    --link-color: dodgerblue;
+    --pfad-border: rgb(175, 175, 175);
+    --pfad-bg-gradient: transparent, lightblue;
+}
+
+[data-theme="dark"] {
+    --background: #1a1a1a;
+    --text: #f0f0f0;
+    --secondary-text: #b0b0b0;
+    --border: #444;
+    --toggle-bg: #333;
+    --toggle-circle: #4a4a4a;
+    --line-color: #444;
+    --link-color: #4d9cff;
+    --pfad-border: #555;
+    --pfad-bg-gradient: transparent, #2a4454;
+}
+
+html {
+    color: var(--text);
+    background-color: var(--background);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+hr.linie-horizontal {
+    border-top-color: var(--line-color);
+}
+
+.quellen-link {
+    color: var(--link-color);
+}
+
+.toggle-circle {
+    background-color: var(--toggle-circle);
+}
+
+.pfad-grid > div {
+    border-color: var(--pfad-border);
+    background-image: linear-gradient(var(--pfad-bg-gradient));
+}
